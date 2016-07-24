@@ -1,0 +1,360 @@
+/* Empty. Add your own CSS if you like */
+
+.start-bg{
+	background-image: url(../img/bg.png);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;	
+}
+
+.title-image {
+    margin-top: 10px;
+    height: 27px;
+}
+
+.platform-android .bar-header .title{
+	right:66px !important;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.platform-ios .bar .title{
+	right:66px !important;
+	text-transform: uppercase;
+}
+
+.platform-android .bar-image-left{
+    margin-top: 0px;
+    margin-left: 8px;
+    height: 42px;
+}
+
+.platform-ios .bar-image-left{
+    margin-top: 0px;
+    margin-left: 8px;
+    height: 34px;
+}
+
+.platform-android .bar-image-right{
+    margin-top: 0px;
+    margin-left: 8px;
+    height: 32px;
+}
+
+.platform-ios .bar-image-right{
+    margin-top: 0px;
+    /*margin-left: 8px;*/
+    height: 32px;
+}
+
+.cart-count{
+	position: absolute;
+    top: 5px;
+}
+
+.cart-badge{
+	position: relative;
+}
+
+.platform-android .bar{
+	height: 55px !important;
+}
+
+.title{
+	text-align: center !important;
+}
+
+.custom-bar{
+	background-color: #201e1e !important;
+	border:none;	
+}
+
+.sidemenu{
+	background-color: #201e1e;
+}
+
+.sidemenu ul{
+	padding: 12px;
+}
+
+.sidemenu ul a{
+	border-bottom: #fff solid !important;
+}
+
+.first-nav{
+	border-top: #fff solid !important;	
+}
+
+.custom-menu .item{
+	background-color: #201e1e;
+	color:#ffffff;
+	border:none;
+}
+
+#profile-bg {
+	position: fixed;
+	left: 0;
+	top: 44px;
+	width: 100%;
+	height: 150px;
+	/* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/94311/bg.jpg') no-repeat transparent;*/
+	background-size: 100%;
+	background-position: 50% 20%;
+	text-align: center;
+}
+
+#content {
+	position: relative;
+	margin-top: 85px;
+	background-color: #201e1e;
+	/*box-shadow: 0px -1px 10px rgba(0,0,0,0.4);*/
+	padding-top: 145px;
+	color:#fff;
+}
+
+#profile-info {
+	position: absolute;
+	top: -95px;
+	width: 100%;
+	z-index: 2;
+	text-align: center;
+}
+#profile-name {
+	color: #fff;
+	font-size: 26px;
+}
+#profile-description {
+	font-size: 15px;
+	color: #fff;
+}
+#profile-description a {
+	color: #fff;
+}
+
+#profile-image {
+	display: block;
+	border-radius: 100px;
+	border: 1px solid #fff;
+	width: 128px;
+	height: 128px;
+	margin: 30px auto 0;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+}
+
+.scroll-view.scroll-x{
+	overflow-x: hidden !important;
+}
+
+.platform-android .tabbed-slidebox .tsb-icons{
+	background-color: #dbdbdb;
+    height: 60px;
+}
+
+.platform-ios .tabbed-slidebox .tsb-icons{
+	background-color: #dbdbdb;
+    height: 60px;
+}
+
+.platform-android .item-list{
+	margin-top: 9px;
+	padding-bottom: 63px;
+}
+
+.tabbed-slidebox .tsb-icons .scroll a{
+	line-height: 3.3em !important;
+	text-transform: uppercase;
+}
+
+.tabbed-slidebox .tsb-icons .scroll a.active{
+	font-size: 1.2em !important;
+	border-bottom: 5px solid #dd0c0c !important;
+}
+
+.tabbed-slidebox .tsb-icons .scroll a{
+	font-size: 1.1em !important;
+}
+
+.img-res{
+	width: 100%;
+	height: auto;
+    min-height: 150px;
+}
+
+.item-des{
+	text-align: left;
+    color: #000;
+    font-size: 16px;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+.item-detail{
+	position: relative;
+}
+
+.item-title{
+	background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    min-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    bottom: 4px;
+}
+
+.item-title h2{
+	text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    color:#fff;
+}
+
+.item-title h2 span{	
+	font-size: 16px;
+	position: absolute;
+    right: 5px;	
+}
+
+.cart-add{
+	position: absolute;    
+    right: 8px;
+    bottom: 75px;
+}
+
+.cart-add ul li{
+	padding-bottom: 5px;
+}
+
+.img-login{
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#selectTagRight{
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+    background-image: url('../img/select_r.png');
+    background-size:50px;
+    background-position: right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    text-align-last:center;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#selectTagLeft{
+	background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+    background-image: url('../img/select.png');
+    background-size:50px;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    text-align-last:center;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.cus-start-but{
+	background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+}
+
+.cus-start-but:hover{
+	color:#fff;
+}
+
+.button.activated,.button.active{
+	color:#fff;
+	background-color: rgba(0, 0, 0, 0.5) !important;	
+}
+
+.bold-text{
+	font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo-top{
+	margin-top: 5%;
+}
+
+.select-top{
+	margin-top: 15% !important;
+}
+
+.search-top{
+	margin-top: 5% !important;
+}
+
+.social-top{
+	margin-top: 15% !important;
+}
+
+.spinnerLoader{
+  margin-top:70% !important;
+  text-align: center;
+  width:100%;
+}
+
+ .loading .spinner svg {
+  width: 40px;
+  height: 40px;
+  stroke: #387EF5;
+  fill: #387EF5;
+}
+.list{top:11px !important;}
+.radio-content .item-content{background-color: rgba(228, 228, 228, 0) !important;}
+.trans{background:transparent !important;}
+
+.platform-ios .loading-container .loading {
+    padding: 21px !important;
+    border-radius: 3px !important;
+    background-color: rgba(39, 39, 39, 0.7) !important;
+    color: #fff !important;
+    text-overflow: ellipsis !important;
+    font-size: 20px !important;
+    width: 60% !important;
+}
+
+.platform-android .loading-container .loading {
+    padding: 21px !important;
+    border-radius: 3px !important;
+    background-color: rgba(255, 255, 255, 1) !important;
+    color: #000 !important;
+    text-overflow: ellipsis !important;
+    font-size: 20px !important;
+    width: 60% !important;
+    box-shadow: 1px 2px 2px 0px #585757;
+}
+
+.loading-container .loading ion-spinner{
+	float: left;
+}
+
+.loading-container .loading span{
+    position: absolute;
+    margin: 9px 0px 0px -42px;
+}
+
+.scroll-view.scroll-y{
+    overflow-y: hidden !important;
+}

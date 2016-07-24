@@ -1,0 +1,155 @@
+<ion-view title="Sathiyam">
+	<ion-nav-buttons side="left">
+		<div class="buttons buttons-left header-item">
+			<span class="left-buttons">
+		    	<img class="bar-image-left" ng-src="img/TOP_ICON.png">
+		    </span>
+	    </div>
+	</ion-nav-buttons>
+
+	<ion-nav-buttons side="right">
+		<span class="right-button">
+		    <img class="bar-image-right" ng-src="img/Sathyam.png">
+		</span>		
+	</ion-nav-buttons>
+	<ion-pane>
+	  	<ion-content class="item-list" scroll="false">
+	  		<!-- Content Section -->
+	  		<tab-slide-box tab="0" ng-init="getCategory();onSlideMove({index:0})">
+	  			<div class="tsb-icons">
+	  				<div class="tsb-ic-wrp">
+	  					<ion-scroll direction="x" class="tsb-hscroll">
+	  						<a href="javascript:;" ng-repeat="cat in category" on-finish-render="test()">{{cat.name}}</a>
+	  					</ion-scroll>
+	  				</div>
+	  			</div>
+	  			<ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+	  				<ion-slide>
+	  					<ion-scroll style="height:100%" delegate-handle="slide1Scroll">
+	  						<div ng-show="isLoaded" class="load-foods" align="center">
+	  							<ion-spinner icon="spiral"></ion-spinner>
+	  						</div>
+		  					<div class="list" ng-repeat="food in foods">			
+		  						<div class="item-detail">		 
+								    <img class="img-res" ng-src="{{imgPath}}{{food.category}}/{{food.image}}" />
+								    <div class="cart-add">
+								    	<ul>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-remove"></i></span></a></li>
+								    		<li><span class="badge badge-assertive">0</span></li>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-add"></i></span></a></li>
+								    		
+								    	</ul>
+								    </div>
+								    <div class="item-title"><h2>{{food.name}} <span>Rs.{{food.price}}</span></h2></div>
+								</div>
+								<p class="item-des">{{food.desc}}</p>		
+							</div>	
+	  					<ion-scroll>
+	  				</ion-slide>
+	  				<ion-slide>
+	  					<ion-scroll style="height:100%" delegate-handle="slide1Scroll">
+	  						<div ng-show="isLoaded" class="load-foods" align="center">
+	  							<ion-spinner icon="spiral"></ion-spinner>
+	  						</div>
+		  					<div class="list" ng-repeat="food in foods">			
+		  						<div class="item-detail">		 
+								    <img class="img-res" ng-src="{{imgPath}}{{food.category}}/{{food.image}}" />
+								    <div class="cart-add">
+								    	<ul>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-remove"></i></span></a></li>
+								    		<li><span class="badge badge-assertive">0</span></li>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-add"></i></span></a></li>
+								    		
+								    	</ul>
+								    </div>
+								    <div class="item-title"><h2>{{food.name}} <span>Rs.{{food.price}}</span></h2></div>
+								</div>
+								<p class="item-des">{{food.desc}}</p>		
+							</div>	
+	  					<ion-scroll>
+	  				</ion-slide>
+	  				<ion-slide>
+	  					<ion-scroll style="height:100%" delegate-handle="slide1Scroll">
+	  						<div ng-show="isLoaded" class="load-foods" align="center">
+	  							<ion-spinner icon="spiral"></ion-spinner>
+	  						</div>
+		  					<div class="list" ng-repeat="food in foods">			
+		  						<div class="item-detail">		 
+								    <img class="img-res" ng-src="{{imgPath}}{{food.category}}/{{food.image}}" />
+								    <div class="cart-add">
+								    	<ul>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-remove"></i></span></a></li>
+								    		<li><span class="badge badge-assertive">0</span></li>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-add"></i></span></a></li>
+								    		
+								    	</ul>
+								    </div>
+								    <div class="item-title"><h2>{{food.name}} <span>Rs.{{food.price}}</span></h2></div>
+								</div>
+								<p class="item-des">{{food.desc}}</p>		
+							</div>								
+	  					<ion-scroll>
+	  				</ion-slide>
+	  				<ion-slide>
+	  					<ion-scroll style="height:100%" delegate-handle="slide1Scroll">
+	  						<div ng-show="isLoaded" class="load-foods" align="center">
+	  							<ion-spinner icon="spiral"></ion-spinner>
+	  						</div>
+		  					<div class="list" ng-repeat="food in foods">			
+		  						<div class="item-detail">		 
+								    <img class="img-res" ng-src="{{imgPath}}{{food.category}}/{{food.image}}" />
+								    <div class="cart-add">
+								    	<ul>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-remove"></i></span></a></li>
+								    		<li><span class="badge badge-assertive">0</span></li>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-add"></i></span></a></li>
+								    		
+								    	</ul>
+								    </div>
+								    <div class="item-title"><h2>{{food.name}} <span>Rs.{{food.price}}</span></h2></div>
+								</div>
+								<p class="item-des">{{food.desc}}</p>		
+							</div>	
+	  					<ion-scroll>
+	  				</ion-slide>
+	  				<ion-slide>
+	  					<ion-scroll style="height:100%" delegate-handle="slide1Scroll">
+	  						<div ng-show="isLoaded" class="load-foods" align="center">
+	  							<ion-spinner icon="spiral"></ion-spinner>
+	  						</div>
+		  					<div class="list" ng-repeat="food in foods">			
+		  						<div class="item-detail">		 
+								    <img class="img-res" ng-src="{{imgPath}}{{food.category}}/{{food.image}}" />
+								    <div class="cart-add">
+								    	<ul>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-remove"></i></span></a></li>
+								    		<li><span class="badge badge-assertive">0</span></li>
+								    		<li><a href="#"><span class="badge badge-assertive"><i class="ion-android-add"></i></span></a></li>
+								    		
+								    	</ul>
+								    </div>
+								    <div class="item-title"><h2>{{food.name}} <span>Rs.{{food.price}}</span></h2></div>
+								</div>
+								<p class="item-des">{{food.desc}}</p>		
+							</div>	
+	  					<ion-scroll>
+	  				</ion-slide>
+	  			</ion-slide-box>
+	  		</tab-slide-box>
+	  	</ion-content>
+		<ion-footer-bar align-title="left" class="bar-assertive custom-bar">
+		  	<div class="buttons">
+		    	<button menu-toggle="left" class="button button-white button-icon button-clear ion-navicon"></button>
+		  	</div>
+		  	<h1 class="title">
+		  		<div class="cart-badge">
+		  			<img class="title-image" ng-src="img/BASKET.png"/>
+		  			<span class="badge badge-assertive cart-count">0</span>
+		  		</div>
+		  	</h1>
+		  	<div class="buttons">
+		  	<button class="button button-white button-icon button-clear ion-android-arrow-dropleft-circle"></button>
+		  	</div>
+		</ion-footer-bar>
+	</ion-pane>
+</ion-view>

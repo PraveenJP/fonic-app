@@ -1,0 +1,29 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-assertive custom-bar">
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <ion-content class="sidemenu" has-header="true" ng-controller="navCtrl">
+      <div id="profile-bg"></div>
+      <div id="content">
+        <div id="profile-info">
+          <img id="profile-image" src="img/profile.png">
+          <h3 id="profile-name">Account Name</h3>
+      </div>
+      <ion-list>
+        <ul class="list custom-menu">
+          <a nav-clear class="item first-nav" menu-toggle="left"><i class="icon ion-android-home"></i>
+           Home</a>          
+          <a nav-clear class="item" menu-toggle="left"><i class="icon ion-fireball"></i> Offers</a>
+          <a nav-clear class="item" menu-toggle="left"><i class="icon ion-person-stalker"></i> About Us</a>
+          <a nav-clear class="item" menu-toggle="left"><i class="icon ion-gear-a"></i> My Account</a>
+          <a nav-clear class="item" menu-toggle="left"><i class="icon ion-help-circled"></i> Help</a>
+        </ul>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
